@@ -8,13 +8,11 @@
     />
     <title>Untuk Lystiani Vania Lalita</title>
 
-    <!-- Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Libre+Barcode+39+Text&display=swap"
       rel="stylesheet"
     />
 
-    <!-- Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 
@@ -43,7 +41,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        overflow: hidden;
+        /* Diubah agar bisa scroll di HP */
+        overflow-x: hidden;
+        overflow-y: auto;
+        padding: 40px 0;
         background: linear-gradient(
           135deg,
           var(--grad-1),
@@ -172,6 +173,7 @@
         padding: 20px;
         perspective: 1000px;
         z-index: 10;
+        margin: auto;
       }
 
       .glass-card {
